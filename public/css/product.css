@@ -1,0 +1,279 @@
+@import url('fonts/MontserratAlternates-Regular.otf');
+#dg-product{
+    gap:120px;
+    position: relative;
+}
+
+#dg-product .dg-table-row{
+    grid-template-columns: repeat(9, 1fr);
+}
+
+#dg-product .dg-product_action{
+    width:min(95%, 380px);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+#dg-product .dg-product_action p{
+    font-weight:600;
+}
+
+#dg-product .dg-product_action .dg-button_solid{
+    width:100%;
+    margin-top:8px;
+    
+}
+
+.dg-top-product-table{
+    margin-bottom: 120px;
+}
+
+
+#dg-product .dg-table-head-iten_action{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+#dg-product .dg-table-head-iten_action button{
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+}
+
+/*modal*/
+ .product-register{
+   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+    transition: .12s ease-in;
+   
+}
+
+
+ .product-register.active-modal{
+    display: block;
+    opacity: 1;
+    z-index: 10;
+
+}
+
+
+ .dg-modal-content{
+    background-color: var(--white);
+    position: absolute;
+    top: 40px;
+    width: min(95%, 570px);
+    height: 480px;
+    left: 50%;
+    right: 50%;
+    padding: 24px;
+    transition:.12s ease-in;
+    transform: translate(-50%, 60%);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.active-modal-content{
+    opacity: 1;
+    transform: translate(-50%, 10%);
+    z-index: 10;
+}
+
+ .dg-head-content{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+ .dg-head-content button{
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.dg-modal-body{
+    padding-top: 18px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*modal body form*/
+.dg-from-modal{
+    margin-top: 24px;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    top: 0px;   
+    transition: all .4s;
+}
+
+.dg-from-modal.dg-next-2{
+    top: -440px;
+}
+
+.dg-from-modal.dg-prev-1{
+    top: 0;
+}
+
+
+.dg-register-step {
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.dg-register-step .dg-input-group{
+    margin: 0;
+}
+
+.dg-two-column{
+    grid-column: 1/ span 2;
+}
+
+.dg-from-modal .dg-input-group{
+    justify-content: flex-start;
+}
+
+.dg-input label{
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+
+.dg-from-modal input[type=text],
+.dg-from-modal input[type=email],
+.dg-from-modal input[type=number]{
+    padding:12px;
+    font-size: 1rem;
+}
+
+/*checkbox*/
+.dg-from-modal input[type=checkbox]{
+    width: auto;
+    padding: 12px;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.dg-from-modal input[type=checkbox]:checked ~ .dg-checkbox{
+    background-color: var(--blue);
+}
+.dg-check-container{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+
+}
+
+.checkbox .dg-input-group{
+    border: none ;
+}
+
+.dg-checkbox{
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    position: absolute;
+    transition: .12s background;
+    border-radius: 3px;
+}
+
+.dg-check-container .dg-checkbox::after{
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid ;
+    border-width: 0 0px 0px 0;
+    border-color: var(--white);
+    transition: all .12s;
+    
+}
+
+.dg-checkbox::after{
+    content: '';
+    position: absolute;
+    transform: rotate(45deg);
+   
+}
+
+.dg-from-modal input[type=checkbox]:checked ~ .dg-checkbox::after{
+    border-width: 0 3px 3px 0;
+
+}
+
+.dg-next-buttons{
+    margin-top:15px;
+}
+
+/*date*/
+.dg-from-modal input[type=date]{
+    width: auto;
+    cursor: pointer;
+}
+
+.date .dg-input-group{
+    border: none;
+    cursor: pointer;
+}
+
+.date .dg-input-group label{
+    cursor: pointer;
+}
+
+/*select*/
+.dg-from-modal select{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    outline: none;
+}
+
+.dg-from-modal select option{
+    padding: 6px;
+    font-size: .9rem;
+    height: 40px;
+}
+
+/*next and prview*/
+.dg-next-buttons{
+   grid-column: 2;
+}
+
+.buttons-action{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.buttons-action button{
+    width: 100px;
+    padding: 12px;
+}

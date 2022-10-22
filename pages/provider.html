@@ -1,0 +1,103 @@
+<div id="dg-provider" class="dg-container flex-column">
+
+    <div class="priducts">
+
+      <div class="product-list">
+        <div class="dg-product_action">
+            <p>Fornecedores</p>
+            <button class="dg-button_solid dg-active-modal" type="button">
+                <i class="fa fa-plus"></i>
+                <span>Novo Fornecedor</span>
+            </button>
+        </div> 
+    
+        <div class="dg-top-product-table">
+            <div class="dg-table-head dg-table-row">
+                <span class="dg-table-head-iten">Id</span>
+                 <span class="dg-table-head-iten">Nome</span>
+                 <span class="dg-table-head-iten">Telefone</span>
+                 <span class="dg-table-head-iten">Endereço</span>
+                 <span class="dg-table-head-iten">Statu</span>
+                 <span class="dg-table-head-iten"></span>
+            </div>
+            <div class="dg-table-list">
+
+
+            </div>
+
+    
+         </div>
+      </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="product-register dg-modal">
+
+    <div class="dg-modal-content modal-provider">
+        <div class="dg-modal-head">
+            <article class="dg-head-content">
+                <h3>Novo Fornecedor</h3>
+                <button class="dg-table_button dg-table_button-remove dg-close-modal">
+                    <i class="fa fa-remove"></i>
+                 </button>
+            </article>
+        </div>
+
+        <div class="dg-modal-body">
+
+                <form id="form_product" method="post" class="dg-from-modal">
+                    <div class="dg-register-step display-grid">
+
+                        <!--- N A M E --->
+                        <div class="dg-input dg-two-column">
+                            <label>Nome</label>
+                            <div class="dg-input-group">
+                                <input type="text" name="providerName" id="prd_name" required placeholder="Qual é o nome do fornecedor?">
+                            </div>
+                        </div>
+
+                         <!--- BI --->
+                         <div class="dg-input">
+                            <label>Telefone</label>
+                            <div class="dg-input-group">
+                                <input type="text" name="providerNumber" id="prd_number" required placeholder="Telefone do fornecedor">
+                            </div>
+                        </div>
+
+                         <!--- Telefone --->
+                         <div class="dg-input ">
+                            <label>Endereço</label>
+                            <div class="dg-input-group">
+                                <input type="text" name="proviverAddress" id="prd_address" required placeholder="Localização do fornecedor">
+                            </div>
+                        </div>
+                    
+
+
+                        <!--- S T A T U S --->
+                        <div class="dg-input checkbox">
+                            <div class="dg-input-group">
+                                <label class="dg-check-container">Activo
+                                    <input type="checkbox" name="status" id="prd_status" placeholder="Introduz o número do B.I">
+                                    <span class="dg-checkbox"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="dg-next-buttons">
+                            <div class="buttons-action">
+                                <button type="button" class="dg-button_solid" id="prd_btn_add">Finalizar</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+           
+        </div>
+    </div>
+
+</div>

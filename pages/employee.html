@@ -1,0 +1,121 @@
+<div id="dg-employee" class="dg-container flex-column">
+    <div class="priducts">
+
+      <div class="product-list">
+        <div class="dg-product_action">
+            <p>Funcionários</p>
+            <button class="dg-button_solid dg-active-modal" type="button">
+                <i class="fa fa-plus"></i>
+                <span>Novo funcionário</span>
+            </button>
+        </div> 
+    
+        <div class="dg-top-product-table">
+            <div class="dg-table-head dg-table-row">
+                <span class="dg-table-head-iten">BI</span>
+                 <span class="dg-table-head-iten">Nome</span>
+                 <span class="dg-table-head-iten">Telefone</span>
+                 <span class="dg-table-head-iten">Email</span>
+                 <span class="dg-table-head-iten">Tipo</span>
+                 <span class="dg-table-head-iten">Statu</span>
+                 <span class="dg-table-head-iten"></span>
+            </div>
+            <div class="dg-table-list">
+               
+            </div>
+
+    
+         </div>
+      </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="product-register dg-modal">
+
+    <div class="dg-modal-content modal-employee">
+        <div class="dg-modal-head">
+            <article class="dg-head-content">
+                <h3>Novo Funcionário</h3>
+                <button class="dg-table_button dg-table_button-remove dg-close-modal">
+                    <i class="fa fa-remove"></i>
+                 </button>
+            </article>
+        </div>
+
+        <div class="dg-modal-body">
+
+                <form id="form_product" method="post" class="dg-from-modal">
+                    <div class="dg-register-step display-grid">
+
+                        <!--- N A M E --->
+                        <div class="dg-input dg-two-column">
+                            <label>Nome</label>
+                            <div class="dg-input-group">
+                                <input type="text" name="employeeName" id="e_name" required placeholder="Qual é o nome do funcionário?">
+                            </div>
+                        </div>
+
+                         <!--- BI --->
+                         <div class="dg-input">
+                            <label>Número do BI</label>
+                            <div class="dg-input-group">
+                                <input type="text" name="biNumber" id="e_bi_number" required placeholder="Informe o número do BI">
+                            </div>
+                        </div>
+
+                         <!--- Telefone --->
+                         <div class="dg-input ">
+                            <label>Telefone</label>
+                            <div class="dg-input-group">
+                                <input type="number" name="employeePhone" id="e_phone" required placeholder="Digite o número de telefone">
+                            </div>
+                        </div>
+
+                        <div class="dg-input ">
+                            <label>Email</label>
+                            <div class="dg-input-group">
+                                <input type="email" name="employeeEmail" id="e_email" required placeholder="Ex.:yestosystem@ys.com">
+                            </div>
+                        </div>
+                     
+
+                        <!--- Tipo de funcionário --->
+                        <div class="dg-input">
+                            <label for="#">Tipo</label>
+                            <div class="dg-input-group">
+                                <select name="e_type" id="e_type">
+                                    <option value="caixa">Caixa</option>
+                                    <option value="gerente">Gerente</option>
+                                    <option value="administrador">Administrador</option>
+                                </select>                                
+                            </div>
+                        </div>
+
+
+                        <!--- S T A T U S --->
+                        <div class="dg-input checkbox">
+                            <div class="dg-input-group">
+                                <label class="dg-check-container">Activo
+                                    <input type="checkbox" name="status" id="e_status" placeholder="Introduz o número do B.I">
+                                    <span class="dg-checkbox"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="dg-next-buttons">
+                            <div class="buttons-action">
+                                <button type="button" class="dg-button_solid" id="e_btn_add">Finalizar</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+           
+        </div>
+    </div>
+
+</div>

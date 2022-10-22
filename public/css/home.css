@@ -1,0 +1,230 @@
+ .dg-header{
+    width: 100%;
+    height: 63px;
+    background-color: var(--white);
+
+ }
+
+ .dg-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 85%;
+   height: inherit;
+   margin: 0 auto;
+ 
+}
+
+
+ 
+ .dg-logo-container{
+    width: 40px;
+ }
+
+ .dg-header-logo{
+    width: 100%;
+
+
+ }
+
+
+ .dg-right-header{
+    height: inherit;
+    align-items: center;
+ }
+
+ .dg-menu-itens{
+    display: flex;
+ }
+
+ .dg-menu-iten a:hover{
+    color: var(--blue);
+ }
+
+ .dg-menu-iten{
+    padding: 9px;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: all .4s;
+ }
+
+ .dg-header-action{
+    height: inherit;
+    
+    margin-left: 1rem;
+    align-items: center;
+ }
+
+ .dg-button{
+    height: inherit;
+    width: 70px;
+    font-size: 1.2rem;
+    padding: .9rem 1.6rem;
+    background-color: var(--white);
+   
+    border-radius: 0;
+    transform:all .4 ;
+
+ }
+
+
+ .dg-button:hover{
+    background-color: rgba(67, 136, 255, 0.3);
+    border-color: rgba(67, 136, 255, 0.3);
+    color: var(--blue);
+ }
+
+ .dg-header-perfil{
+    padding: 0 .8rem;
+    align-items: center;
+
+ }
+
+ .dg-img-perfil{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+ }
+
+ .dg-img-perfil img{
+    border-radius: 50%;
+    border: 3px solid var(--blue);
+ }
+
+ .dg-header-perfil p{
+    margin-left: 12px;
+    font-size: .8rem;
+    font-weight:bold;
+    cursor: pointer;
+
+  
+ }
+.dg-header-perfil:hover .dg-header-perfil p{
+    color: var(--blue);
+}
+
+/*main===========================================*/
+
+.dg-main{
+    
+    margin-bottom: 70px;
+}
+
+.dg-main .dg-container{
+    display: block;
+}
+
+/*initial info*/
+.dg-cards-info{
+    background-color: var(--white);
+    width: 100%;
+    
+    border: thin solid rgba(150, 150, 150, .3);
+    border-radius: 3px;
+    box-shadow: -1px 1px 2px rgba(190, 190, 190, .2);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+
+.dg-card-info{
+    height: inherit;
+    border-right: thin solid rgba(150, 150, 150, .3);
+    padding: 2rem;
+}
+
+.dg-card-info:last-child{
+    border: none;
+}
+
+.dg-cards-info .dg-card-info span{
+    font-size: .8rem;
+    margin-bottom: .7rem;
+    display: block;
+   
+}
+
+.dg-cards-info .dg-card-info h3{
+    font-size: 1.4rem;
+}
+
+/*top product*/
+.dg-label_bold{
+    font-weight: bold;
+}
+
+.dg-label_blue{
+   color: var(--blue);
+}
+
+.dg-label_gray{
+   color: var(--text-color-2);
+}
+
+.dg-top-product{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 100%;
+
+}
+
+.dg-top-product-table{
+ 
+    width: 100%;
+    margin-top: 12px;
+    border-radius: 3px;
+    font-size: .7rem;
+}
+.dg-table-row{
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   justify-content: space-between;
+   padding: 18px;
+   background-color: var(--white);
+   transition: all .4s;
+   border-radius: 3px;
+}
+
+.dg-table-row:not(.dg-table-head):hover{
+   background-color: rgba(0, 123, 255, 0.041);
+   cursor: pointer;
+}
+
+.dg-table-head-iten{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+.dg-table-head {
+   font-weight: bold;
+   color: var(--text-color-2);
+}
+
+.dg-table-body{
+   font-weight: bold;
+   margin: 6px 0;
+   border: thin solid #dfe0e1;
+}
+
+
+.dg-border-left-color_teal{
+   border-left: 4px solid ;
+   border-left-color: var(--teal);
+}
+
+.dg-border-left-color_yellow{
+   border-left: 4px solid ;
+   border-left-color: var(--yellow);
+}
+
+.dg-border-left-color_orange{
+   border-left: 4px solid ;
+   border-left-color: var(--orange);
+}
+.dg-top-product-table button{
+   font-weight: bold;
+   background-color: rgba(0, 123, 255, 0.041);
+}
+

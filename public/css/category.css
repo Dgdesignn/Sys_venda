@@ -1,0 +1,35 @@
+
+.dg-category-add{
+    width: min(95%, 480px);
+    margin: 0 auto;
+    gap: 6px;
+    margin-bottom: 25px;
+}
+
+.dg-category-table{
+    width: min(95%, 480px);
+}
+
+.dg-category-table button{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.dg-category-table button:hover{
+    background-color: var(--red-hover);
+}
+
+  
+
+.dg-category-table .dg-table-row{
+   grid-template-columns: repeat(3,1fr);
+   width: 100%;
+}
+
+
+.dg-table-head-iten_action.dg-table-head-iten{
+   align-items: flex-end;
+}

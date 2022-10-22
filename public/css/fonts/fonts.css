@@ -1,0 +1,56 @@
+/*----------------------------
+===========TUYETOMAKER========
+------------------------------*/
+
+/*@font Montserrat*/
+@font-face {
+    font-family: 'Mont-light';
+    src:local('HindMadurai'), 
+    url('MontserratAlternates-Light.otf');
+}
+
+@font-face {
+    font-family: 'Mont-medium';
+    src:local('HindMadurai'), 
+    url('MontserratAlternates-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Mont';
+    src:local('HindMadurai'), 
+    url('MontserratAlternates-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Mont-semi-bold';
+    src:local('HindMadurai'), 
+    url('MontserratAlternates-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Mont-bold';
+    src:local('HindMadurai'), 
+    url('MontserratAlternates-Bold.otf');
+}
+
+
+/*@font NanumGothic*/
+@font-face {
+    font-family: 'NanumG';
+    src:local('HindMadurai'), 
+    url('NanumGothic-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NanumG-bold';
+    src:local('HindMadurai'), 
+    url('NanumGothic-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'NanumG-extra-bold';
+    src:local('HindMadurai'), 
+    url('NanumGothic-ExtraBold.ttf');
+}
+
+

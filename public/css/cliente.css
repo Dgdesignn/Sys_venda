@@ -1,0 +1,52 @@
+#dg-client{
+    gap:120px;
+    position: relative;
+}
+
+#dg-client .dg-table-row{
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#dg-client .dg-product_action{
+    width:min(95%, 380px);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+#dg-client .dg-product_action p{
+    font-weight:600;
+}
+
+#dg-client .dg-product_action .dg-button_solid{
+    width:100%;
+    margin-top:8px;
+    
+}
+
+.dg-top-product-table{
+    margin-bottom: 120px;
+}
+
+
+#dg-client .dg-table-head-iten_action{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+#dg-client .dg-table-head-iten_action button{
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+}
+
+.modal-provider.dg-modal-content{
+    height:300px;
+}
+
+#dg-client .product-list{
+    max-width: 780px;
+}

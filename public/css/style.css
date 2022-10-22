@@ -1,0 +1,238 @@
+@import url('fonts/fonts.css');/*import fonts*/
+
+:root {
+    --blue: #007bff;
+    --light-blue:rgba(0, 123, 255, 0.3);
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --red-hover: #bc2d3c;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --text-color:#212529;
+    --text-color-2:#778594;
+    --blue-hover:#0465cc;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+::-webkit-scrollbar{
+    width: 14px;
+}
+
+::-webkit-scrollbar-track{
+    background-color:#ced1d3;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6c757d;
+}
+
+body{
+    background-color: #e9ecef;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+   
+    font-family: 'NanumG';
+
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
+}
+
+header.dg-header{
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+
+
+
+.rad-alert{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+
+button.dg-table_button-remove:hover{
+    background-color: var(--red);
+}
+
+
+.green-alert{
+    background-color: var(--success);
+    color: var(--white);
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+
+
+#dg-page{
+    margin-top: 120px;
+}
+
+.diplay-flex{
+    display: flex;
+}
+
+.display-grid{
+    display: grid;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.dg-logo-img{
+    width: 100px;
+    margin: auto;
+}
+
+.dg-current-page{
+    color: var(--blue);
+}
+
+.dg-box-input{
+    width: 100%;
+    background-color: var(--white);
+    padding: 12px;
+    justify-content: space-between;
+    border: thin solid var(--blue);
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    resize: none;
+    padding: 3px;
+}
+
+.dg-box-input input{
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.dg-box-input button{
+    justify-content: space-between;
+    gap: 9px;
+}
+
+
+
+img{
+    width: 100%;
+    border: none;
+    padding: none;
+    margin: none;
+
+}
+.text-red{
+    color: var(--blue);
+}
+
+
+.dg-input-group{
+    
+    display: flex;
+    justify-content: space-between;
+    border: thin solid #d2d8dc;
+    padding: 6px 12px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+
+}
+.alert-errot{
+    text-align: center;
+    color: var(--red);
+    font-size: .9rem;
+    margin: 8px ;
+}
+
+
+.dg-input-group input{
+    width: 90%;
+    border: none;
+    outline: none;
+}
+.input-group-text{
+    color: #727c83;
+}
+
+button{
+    border: none;
+    padding: 12px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+    transition: .4s;
+    font-weight: 600;
+}
+
+
+button:hover{
+    background-color: #dcdcdc;
+}
+
+.dg-button_solid{
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+
+}
+
+.dg-table_button:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.dg-button_solid:hover{
+    background-color: var( --blue-hover);
+}

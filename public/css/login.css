@@ -1,0 +1,27 @@
+#body-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+}
+
+.dg-login-container{
+    width: 320px;
+}
+.dg-button{
+    color: var(--white);
+ }
+
+.dg-login-container h3{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #464b50;
+}
+
+.dg-form-login{
+    padding: 1.6rem;
+    background-color: var(--white);
+    box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, .1) ;
+}

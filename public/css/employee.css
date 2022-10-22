@@ -1,0 +1,61 @@
+@import url('fonts/MontserratAlternates-Regular.otf');
+#dg-employee{
+    gap:120px;
+    position: relative;
+}
+
+#dg-employee .dg-table-row{
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#dg-employee .dg-product_action{
+    width:min(95%, 380px);
+    margin:0 auto;
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+#dg-employee .dg-product_action p{
+    font-weight:600;
+}
+
+#dg-employee .dg-product_action .dg-button_solid{
+    width:100%;
+    margin-top:8px;
+    
+}
+
+.dg-top-product-table{
+    margin-bottom: 120px;
+}
+
+
+#dg-employee .dg-table-head-iten_action{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+#dg-employee .dg-table-head-iten_action button{
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+}
+
+
+.dg-from-modal select{
+    padding:12px;
+}
+
+
+
+.active-modal-content {
+    opacity: 1;
+    transform: translate(-50%, 10%);
+    z-index: 10;
+}
+.modal-employee.dg-modal-content{
+    height:416px;
+}

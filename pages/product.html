@@ -1,0 +1,175 @@
+<div id="dg-product" class="dg-container flex-column">
+    <div class="priducts">
+
+      <div class="product-list">
+        <div class="dg-product_action">
+            <p>Registart produto</p>
+            <button class="dg-button_solid dg-active-modal" type="button">
+                <i class="fa fa-plus"></i>
+                <span>Novo produto</span>
+            </button>
+        </div> 
+    
+        <div class="dg-top-product-table">
+            <div class="dg-table-head dg-table-row">
+                 <span class="dg-table-head-iten">Código</span>
+                 <span class="dg-table-head-iten">Produto</span>
+                 <span class="dg-table-head-iten">Quant-min</span>
+                 <span class="dg-table-head-iten">Quant-max</span>
+                 <span class="dg-table-head-iten">Quant-actual</span>
+                 <span class="dg-table-head-iten">Preço de entrada</span>
+                 <span class="dg-table-head-iten">Preço de saída</span>
+                 <span class="dg-table-head-iten">Fornecedor</span>
+                 <span class="dg-table-head-iten"></span>
+            </div>
+            <div class="dg-table-list">
+                
+            </div>
+
+    
+         </div>
+      </div>
+
+    </div>
+
+</div>
+
+<div class="product-register dg-modal">
+
+    <div class="dg-modal-content">
+        <div class="dg-modal-head">
+            <article class="dg-head-content">
+                <h3>Adicionar novo producto</h3>
+                <button class="dg-table_button dg-table_button-remove dg-close-modal">
+                    <i class="fa fa-remove"></i>
+                 </button>
+            </article>
+        </div>
+
+        <div class="dg-modal-body">
+
+                <form id="form_product" method="post" class="dg-from-modal">
+                    <div class="dg-register-step display-grid">
+
+                        <!--- N A M E --->
+                        <div class="dg-input dg-two-column">
+                            <label>Nome</label>
+                            <div class="dg-input-group">
+                                <input type="text" name="productname" id="product_name" required placeholder="Digite o nome do producto">
+                            </div>
+                        </div>
+
+                        <!--- C A T E G O R Y --->
+                        <div class="dg-input">
+                            <label for="#">Categoria</label>
+                            <div class="dg-input-group">
+                                <select name="category" id="dg_product_categ">
+                                    <option value="computador">Computador</option>
+                                    <option value="smartphone">Smartphone</option>
+                                    <option value="eletrodomestico">Eletrodoméstico</option>
+                                </select>                                
+                            </div>
+                        </div>
+
+                        <!--- P R O V I D E R --->
+                        <div class="dg-input">
+                            <label>Fronecedor</label>
+                            <div class="dg-input-group">
+                                <select name="provider" required id="dg_provider_product">
+                                    <option value="">Selecione um fornecedor</option>
+                                    <option value="Afonso Sonde">Afonso Sonde</option>
+                                    <option value="Dagnaldo Alexandre">Dagnaldo Alexandre</option>
+                                    <option value="Elmar Bravo">Elmar Bravo</option>
+                                </select>                                
+                            </div>
+                        </div>
+
+
+                        <!--- D A T E  I N --->
+                        <div class="dg-input date">                          
+                            <div class="dg-input-group">
+                                <label >
+                                    <input type="date" required name="date-in" id="date_in">                               
+                                    Data de entrada
+                                </label>
+                            </div>
+                        </div>
+
+                        <!--- S T A T U S --->
+                        <div class="dg-input checkbox">
+                            <div class="dg-input-group">
+                                <label class="dg-check-container">Disponível
+                                    <input type="checkbox" name="status" id="status" placeholder="Introduz o número do B.I">
+                                    <span class="dg-checkbox"></span>
+                                </label>
+                            </div>
+                        </div>
+            
+                        <!--- D E S C --->
+                        <div class="dg-input dg-two-column">
+                            <label>Descrição do producto</label>
+                            <div class="dg-input-group">
+                                <textarea name="desc" required id="dg_desc" cols="30" rows="5" placeholder="Escreva aqui a descrição do producto"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="dg-next-buttons">
+                            <div class="buttons-action">
+                                <button type="button" class="dg-button_solid dg-next-button">Próximo</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="dg-register-step display-grid">
+
+                        <!--- P R I C E  I N --->
+                        <div class="dg-input ">
+                            <label>Preço de entrada</label>
+                            <div class="dg-input-group">
+                                <input required type="number" name="price_in" min="0" id="price_in" placeholder="Digite o preço de compra">
+                            </div>
+                        </div>
+
+                         <!--- P R I C E  O U T --->
+                         <div class="dg-input ">
+                            <label>Preço de saída</label>
+                            <div class="dg-input-group">
+                                <input required type="number" name="price_out" min="0" id="price_out" placeholder="Digite o preço de venda">
+                            </div>
+                        </div>
+
+                         <!--- Q U A N T  M A X --->
+                         <div class="dg-input ">
+                            <label>Quantidade máxima</label>
+                            <div class="dg-input-group">
+                                <input required type="number" name="qtd_max" min="0" id="qtd_max" placeholder="Digite a quantidade máxima">
+                            </div>
+                        </div>
+
+                         <!--- Q U A N T  M I N --->
+                         <div class="dg-input ">
+                            <label for="#">Quantidade mínima</label>
+                            <div class="dg-input-group">
+                                <input type="number" name="qtd_min" min="0" id="qtd_min" placeholder="Digite quantidade mínima">
+                            </div>
+                        </div>
+                        
+                      
+                        <div class="dg-next-buttons">
+                            <div class="buttons-action">
+                                <button type="button" class=" dg-prev-button">Anterio</button>
+                                <button type="submit" name="btn_finish" class="dg-button_solid dg-finish-button">Finalizar</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+           
+                </form>
+           
+        </div>
+    </div>
+
+</div>
