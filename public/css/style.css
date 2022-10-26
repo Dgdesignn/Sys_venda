@@ -176,6 +176,15 @@ img{
     color: var(--blue);
 }
 
+.dg-input-group.dg-border_alert{
+    border-color: rgba(255, 0, 0, .4);
+    box-shadow: 1px 1px 7px rgba(255, 0, 0, .4);
+}
+
+.dg-input-group.dg-border_alert .input-group-text {
+    color: rgba(255, 0, 0, .4);
+    
+}
 
 .dg-input-group{
     

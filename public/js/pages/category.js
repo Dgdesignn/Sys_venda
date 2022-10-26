@@ -1,9 +1,17 @@
 var category_list = [
-    {id:1, name:'Computador'},
-    {id:2, name:'Eletromedstico'},
-    {id:3, name:'Game'},
-    {id:4, name:'Smartfone'},
+
 ]
+
+var init = {
+    method:'get',
+    headers:{
+        'Authorization':'Bearer'+localStorage.getItem('token')
+    },
+    mode:'cors'
+
+}
+
+
 
 function allEvent(){
 
@@ -18,12 +26,12 @@ function allEvent(){
 
 function addCategory(){
     var category_name = document.querySelector('#category_name')
+    let new_element = {id:category_list.length+1, name:category_name.value}
     
-    let new_element = {id:category_list.length+1, name:category_name.value} 
 
     category_list.push(new_element);
     categoryTemplate()
-    category_name.value=''
+    category_name.value='';
 }
 
 function removeCategory(event){
@@ -45,8 +53,20 @@ function removeCategory(event){
 
 }
 
+async function fetchData(data=null){
+    var response;
+    if(data==null){
+        response = await fetch('http://127.0.0.1:8000/api/categories',init)
+        response = await response.json();
+        categoryTemplate(response)
+    }
+    
+}
 
-function categoryTemplate(){
+
+function categoryTemplate(data=null){
+    console.log(data)
+    category_list = data!=null?data:[]
     let category_table = document.querySelector('.category_list')
     let template_data = '';
 
@@ -72,5 +92,7 @@ function categoryTemplate(){
 export default function categoryPage(){
     categoryTemplate()
     allEvent()
+    fetchData()
+    
  }
 

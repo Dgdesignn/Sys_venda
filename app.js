@@ -1,5 +1,9 @@
 import pageInit from './public/js/pages.js';
+import index from './src/setting/redirect.js';
+import logout from './src/setting/logout.js';
 
+
+index();
 const page = document.querySelector('#dg-page')
 const page_title =document.querySelector('title')
 
@@ -49,7 +53,7 @@ async function initial(){
     page_title.textContent = route.toLocaleUpperCase();
     defaultHash()
 
-    
+    logout()
     pageInit(route)
     
 }
