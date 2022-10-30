@@ -6,6 +6,12 @@ import logout from './src/setting/logout.js';
 index();
 const page = document.querySelector('#dg-page')
 const page_title =document.querySelector('title')
+function alertMessage(){
+    const e_btn_alert = document.querySelector('.close-alert-message')
+    const alert_action = document.querySelector('.alert-action')
+    e_btn_alert.addEventListener('click',()=>alert_action.classList.remove('shows-alert-message'))
+
+}
 
 //cada vez que o hash mudar chama a função initial
 window.addEventListener('hashchange',initial)
@@ -53,9 +59,36 @@ async function initial(){
     page_title.textContent = route.toLocaleUpperCase();
     defaultHash()
 
+    alertMessage()
+    verifyToken()
     logout()
-    pageInit(route)
+    pageInit(route) 
+}
+
+async function verifyToken(){
+    let response;
+    var init = {
+        method:'get',
+        headers:{
+            'Authorization':'Bearer'+localStorage.getItem('token')
+        },
+        mode:'cors'
     
+    }
+    
+    try{
+        response = await fetch('http://127.0.0.1:8000/api/categories',init)
+        response = await response.json();
+        if(response.status){
+            alert('O token expirou!')
+            localStorage.removeItem('token')
+            localStorage.removeItem('number_bi')   
+            location.reload(true)
+        }
+   
+    }catch(err){
+        console.log(err)
+    }
 }
 
 

@@ -93,6 +93,48 @@ button.dg-table_button-remove:hover{
 }
 
 
+
+.alert-action{
+    position: fixed;
+    z-index: 30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    gap: 1rem;
+    padding: 12px 16px;
+    top: 4.5rem;
+    right: -26rem;
+    border-radius: 6px;
+    transition: .12s ease-in-out;
+}
+
+.alert-action.shows-alert-message{
+    right: 1rem;
+}
+
+
+.dg-message-alert-ok{
+    background-color: var(--blue);
+}
+
+.alert-action button:hover{
+    background-color: var(--blue-hover);
+}
+
+.alert-action button{
+    border: none;
+    padding: 1px 1px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: var(--white);
+    transition: .4s;
+    font-weight: 600;
+}
 .green-alert{
     background-color: var(--success);
     color: var(--white);
