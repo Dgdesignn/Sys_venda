@@ -180,6 +180,7 @@
    display: grid;
    grid-template-columns: repeat(6,1fr);
    justify-content: space-between;
+   gap: 9px;
    padding: 18px;
    background-color: var(--white);
    transition: all .4s;

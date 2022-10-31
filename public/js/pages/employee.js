@@ -124,15 +124,15 @@ function employeeTemplate(data){
                 <span class="dg-table-head-iten"> +224 ${employee.phone_number}</span>
                 <span class="dg-table-head-iten">${employee.email}</span>
                 <span class="dg-table-head-iten"> ${employee.level==1?'Admin':'Caixa'}</span>
-                <span class="dg-table-head-iten"> <label class="${employee.status!=1?'rad-alert':'green-alert'}">${employee.status}</label></span>
+                <span class="dg-table-head-iten"> <label class="${employee.status!=1?'rad-alert':'green-alert'}">${employee.status==1?'Activo':'Desactivo'}</label></span>
                 <span class="dg-table-head-iten dg-table-head-iten_action">
-                    <button class="dg-table_button" date-id="${employee.bi}">
+                    <button class="dg-table_button" date-id="${employee.bi}" title="Detalhes">
                     <i class="far fa-file-text"></i>
                     </button>
-                    <button class="dg-table_button" date-id="${employee.bi}">
+                    <button class="dg-table_button" date-id="${employee.bi}" title="Editar dados do funcionário">
                     <i class="fa fa-pencil"></i>
                     </button>
-                    <button class="dg-table_button dg-table_button-remove" date-id="${employee.bi}">
+                    <button class="dg-table_button dg-table_button-remove" date-id="${employee.bi}" title="Remover Funcionário">
                     <i class="fa fa-remove"></i>
                     </button>
                 
